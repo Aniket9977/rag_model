@@ -1,4 +1,5 @@
 langchain
+streamlit
 ipykernel 
 python-dotenv
 langchain_community

@@ -15,9 +15,9 @@ from dotenv import load_dotenv
 load_dotenv()
 ## load the GROQ API Key
 os.environ['OPENAI_API_KEY']=os.getenv("OPENAI_API_KEY")
-os.environ['GROQ_API_KEY']=os.getenv("GROQ_API_KEY")
+os.environ['groq_api']=os.getenv("groq_api")
 
-groq_api_key=os.getenv("GROQ_API_KEY")
+groq_api_key=os.getenv("groq_api")
 
 llm=ChatGroq(groq_api_key=groq_api_key,model_name="Llama3-8b-8192")
 
