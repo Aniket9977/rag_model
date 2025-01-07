@@ -24,7 +24,6 @@ load_dotenv()
 
 # Load the GROQ API Key
 api_key = os.getenv("OPENAI_API_KEY")
-os.environ['groq_api'] = os.getenv("groq_api")
 
 groq_api_key = os.getenv("groq_api")
 
