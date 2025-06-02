@@ -4,18 +4,15 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.document_loaders import TextLoader
 from io import BytesIO
 import tempfile
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.document_loaders import TextLoader
+
 from langchain_groq import ChatGroq
 from langchain_openai import OpenAIEmbeddings
-from langchain_community.embeddings import OllamaEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains import create_retrieval_chain
 from langchain_community.vectorstores import FAISS
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.document_loaders import TextLoader
+
 import openai
 from dotenv import load_dotenv
 import time
@@ -23,7 +20,6 @@ import time
 load_dotenv()
 
 # Load the GROQ API Key
-api_key = os.getenv("OPENAI_API_KEY")
 
 groq_api_key = os.getenv("groq_api")
 
